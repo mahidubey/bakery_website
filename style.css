@@ -1,0 +1,103 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(assets/newweb.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin-right:90px ;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+   
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255) ;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 5px;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.middle{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+   
+}
+.middle p{
+  
+    margin:10px ;
+   
+}
+#Buy_Now{ width: 150px;
+     height: 50px;   
+     font-size: 1.5rem;
+     border: none;
+     margin: 50px;
+     /* background-color: black;*/
+     color: white;
+     background: transparent;
+     border-radius: 10px;
+     border: 2px solid pink;
+
+}
+#Buy_Now:hover{
+    background-color: pink;
+    color: black;
+    cursor: pointer;
+   
+}
+footer{
+    width: 100vw;
+    background-color: pink;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.2rem;
+ 
+
+}
